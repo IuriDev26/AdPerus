@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "npx tailwindcss -i ./Themes/theme.css -o ./wwwroot/css/theme.css --watch"
+    "watch:tailwind": "npx tailwindcss -i ./Themes/theme.css -o ./wwwroot/css/theme.css --watch",
+    "watch:blazor": "dotnet watch run",
+    "dev": "concurrently \"npm run watch:tailwind\" \"npm run watch:blazor\""
   },
   "keywords": [],
   "author": "",
@@ -12,7 +14,10 @@
   "type": "commonjs",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
-    "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "tailwindcss": "^4.1.11"
   }
 }
