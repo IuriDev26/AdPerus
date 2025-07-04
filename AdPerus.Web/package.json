@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:tailwind": "npx tailwindcss -i ./Themes/theme.css -o ./wwwroot/css/theme.css --watch",
+    "watch:tailwind": "npx tailwindcss -i ./Themes/Theme.css -o ./wwwroot/css/theme.css --watch",
     "watch:blazor": "dotnet watch run",
     "dev": "concurrently \"npm run watch:tailwind\" \"npm run watch:blazor\""
   },

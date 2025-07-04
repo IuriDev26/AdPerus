@@ -1,0 +1,12 @@
+<span class="font-semibold text-lg text-secondary">@Resource /</span>
+<span class="font-semibold text-lg">@Item</span>
+
+@code {
+
+    [Parameter, EditorRequired] 
+    public string Resource { get; set; } = string.Empty;
+    
+    [Parameter, EditorRequired] 
+    public string Item { get; set; } = string.Empty;
+
+}

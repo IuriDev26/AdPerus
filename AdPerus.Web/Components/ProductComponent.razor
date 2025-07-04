@@ -1,9 +1,10 @@
 <div>
     <NavLink href="store/general">
-        <div class="cardy">
-            <img src="@ProductImage" alt="" class="store-image-list-item">
-            <span class="ml-2 label-text">@ProductTitle</span>
-            <span class="ml-2 text-text-sec">@ProductPrice.ToString("C")</span>
+        <div class="rounded-xl shadow-lg shadow-slate-950/50 bg-slate-950/30 h-75 w-60 flex flex-col justify-start
+                    border-1 border-slate-800 mx-2 transition-transform duration-300 hover:-translate-y-2">
+            <img src="@ProductImage" alt="" class="rounded-xl m-2">
+            <span class="ml-2 font-extrabold text-lg">@ProductTitle</span>
+            <span class="ml-2 text-secondary">@ProductPrice.ToString("C")</span>
         </div>
     </NavLink>
 </div>

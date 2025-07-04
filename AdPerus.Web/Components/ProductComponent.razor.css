@@ -1,8 +1,0 @@
-.label-text{
-    @apply font-extrabold text-lg
-}
-
-.cardy{
-    @apply rounded-xl shadow-lg shadow-slate-950/50 bg-slate-950/30 h-56 w-42 flex flex-col justify-start
-    border-1 border-slate-800 mx-2 transition-transform duration-300 hover:-translate-y-2
-}

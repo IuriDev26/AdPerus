@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme{
+    --color-primary: #121A21;
+    --color-secondary: #94ADC7;
+    --color-background-tertiary: #243647;
+    --font-raleway: 'Raleway', sans-serif;
+    --color-test: #1463B8;
+}

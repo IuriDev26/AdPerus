@@ -1,33 +1,29 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="min-h-screen flex flex-col mt-4">
+    
     <header class="flex justify-between items-center w-full border-b border-white">
-
         <div class="flex items-center ml-4 mb-2">
             <img src="icons/adperus.jpg" alt="" width="48" height="48" class="rounded-full">
             <span class="font-semibold text-lg ml-2 text-white">AD Perus</span>
         </div>
-
         <div class="flex items-center mr-4">
-
             <ul class="flex text-white font-semibold mr-4">
                 <li class="mx-4">Loja</li>
                 <li class="mx-4">Noticias</li>
                 <li class="mx-4">Eventos</li>
                 <li class="mx-4">Sobre</li>
             </ul>
-
             <div class="flex items-center justify-between mr-4 ">
 
-                <div class="bg-[#243647] p-2 mr-2 rounded-xl">
+                <div class="bg-background-tertiary p-2 mr-2 rounded-xl">
                     <img src="icons/search.svg" alt="" width="20" height="20">
                 </div>
 
-                <div class="bg-[#243647] p-2 mr-2 rounded-xl">
+                <div class="bg-background-tertiary p-2 mr-2 rounded-xl">
                     <img src="icons/profile.svg" alt="">
                 </div>
             </div>
-
             <div>
                 <img src="icons/user.png" alt="">
             </div>
@@ -35,41 +31,12 @@
     </header>
 
     <div class="flex flex-1">
-        <aside class="fixed w-64">
-            <ul class="mt-3">
-                <li>
-                    <NavLink href="/store">
-                        <div class="menu-list-item @GetActiveClass("/store")">
-                            <img src="icons/store.svg" class="default-icon mr-2">
-                            <img src="icons/store-black.svg" class="mr-2 hidden hover-icon">
-                            <span class="font-semibold">Loja</span>
-                        </div>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink href="/events">
-                        <div class="menu-list-item @GetActiveClass("/events")">
-                            <img src="icons/events.svg" alt="Eventos" class="mr-2 default-icon">
-                            <img src="icons/events-black.svg" alt="Eventos" class="mr-2 hidden hover-icon">
-                            <span class="font-semibold">Eventos</span>
-                        </div>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink href="/news">
-                        <div class="menu-list-item @GetActiveClass("/news")">
-                            <img src="icons/news.svg" alt="Noticias" class="mr-2 default-icon">
-                            <img src="icons/news-black.svg" alt="Noticias" class="mr-2 hidden hover-icon">
-                            <span class="font-semibold">Noticias</span>
-                        </div>
-                    </NavLink>
-                </li>
-            </ul>
-        </aside>
+        <NavMenu/>
         <main class="flex-1 ml-64">
             @Body
         </main>
     </div>
+    
 </div>
 
     
